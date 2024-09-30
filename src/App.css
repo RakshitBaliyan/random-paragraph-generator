@@ -1,0 +1,101 @@
+/* src/App.css */
+
+.container {
+  max-width: 800px;
+  margin: 50px auto;
+  padding: 20px;
+  font-family: Arial, sans-serif;
+  text-align: center;
+}
+
+h1 {
+  margin-bottom: 20px;
+}
+
+.input-group {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 30px;
+  flex-wrap: wrap; /* Allows wrapping on smaller screens */
+}
+
+.input-group input {
+  padding: 10px;
+  font-size: 16px;
+  width: 250px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  margin-bottom: 10px; /* Spacing for smaller screens */
+}
+
+.input-group button {
+  padding: 10px 20px;
+  margin: 0 5px;
+  font-size: 16px;
+  background-color: #007bff;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  margin-bottom: 10px; /* Spacing for smaller screens */
+}
+
+.input-group button:hover {
+  background-color: #0056b3;
+}
+
+.copy-all-button {
+  background-color: #28a745; /* Green color for Copy All */
+}
+
+.copy-all-button:hover {
+  background-color: #1e7e34;
+}
+
+.paragraph-container {
+  text-align: left;
+}
+
+.paragraph-wrapper {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  background-color: #f9f9f9;
+  padding: 15px;
+  margin-bottom: 15px;
+  border-radius: 5px;
+  line-height: 1.6;
+}
+
+.paragraph {
+  flex: 1;
+  margin-right: 10px;
+}
+
+.copy-button {
+  padding: 5px 10px;
+  font-size: 14px;
+  background-color: #17a2b8; /* Teal color for Copy */
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  height: fit-content;
+}
+
+.copy-button:hover {
+  background-color: #117a8b;
+}
+
+@media (max-width: 600px) {
+  .paragraph-wrapper {
+    flex-direction: column;
+    align-items: stretch;
+  }
+
+  .copy-button {
+    margin-top: 10px;
+    align-self: flex-end;
+  }
+}
